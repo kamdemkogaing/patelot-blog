@@ -1,3 +1,4 @@
+import Footer from "./components/footer/Footer";
 import PatelotHeader from "./components/header/PatelotHeader";
 import PatelotNavBar from "./components/navbar/PatelotNavBar";
 import Home from "./pages/Home";
@@ -27,6 +28,7 @@ function App() {
         onSelectItem={handleSelectItem}
       />
       <Home />
+      <Footer />
     </>
   );
 }

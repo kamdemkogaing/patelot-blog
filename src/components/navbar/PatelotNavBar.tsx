@@ -50,7 +50,7 @@ const PatelotNavBar = ({
               <li
                 key={`navElement-${index}, ${heading}`}
                 className={classNames(
-                  "my-0 mx-4 p-3 font-bold cursor-pointer hover:text-green-400",
+                  "my-0 mx-4 p-3 font-bold cursor-pointer hover:text-[black]",
                   `${
                     selectedIndex === index
                       ? "border-b-[olive] border-b-4 success"
