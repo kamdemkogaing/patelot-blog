@@ -1,10 +1,8 @@
 import Footer from "../components/footer/Footer";
 import PatelotHeader from "../components/header/PatelotHeader";
 import PatelotNavBar from "../components/navbar/PatelotNavBar";
-import PatelotCards from "../components/need-grid/PatelotCards";
-import Psa from "../components/psa/Psa";
 
-const Home = () => {
+const Countries = () => {
   const listElementNavBar: string[] = [
     "Über mich",
     "Projekte",
@@ -19,12 +17,11 @@ const Home = () => {
 
   // state
 
-  // comportement
+  //comportements
 
-  //render
+  // Render
   return (
     <>
-      <Psa />
       <PatelotHeader
         namePatelot="Patrick Kamdem"
         rolePaletot="Frontend Entwickler"
@@ -34,10 +31,10 @@ const Home = () => {
         heading="navBar"
         onSelectItem={handleSelectItem}
       />
-      <PatelotCards />
+      <div></div>
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Countries;

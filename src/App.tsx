@@ -1,35 +1,16 @@
-import Footer from "./components/footer/Footer";
-import PatelotHeader from "./components/header/PatelotHeader";
-import PatelotNavBar from "./components/navbar/PatelotNavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Countries from "./pages/Countries";
 import Home from "./pages/Home";
 
 function App() {
-  const listElementNavBar: string[] = [
-    "Über mich",
-    "Projekte",
-    "Blog",
-    "Kontakt",
-    "Hobbys",
-  ];
-
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
-
   return (
-    <>
-      <PatelotHeader
-        namePatelot="Patrick Kamdem"
-        rolePaletot="Frontend Entwickler"
-      />
-      <PatelotNavBar
-        items={listElementNavBar}
-        heading="navBar"
-        onSelectItem={handleSelectItem}
-      />
-      <Home />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
+        <Route path="/country" element={<Countries />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

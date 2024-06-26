@@ -43,7 +43,7 @@ const Psa = () => {
         <div className="p-[1rem] text-white">
           <div className="text-lg mb-4">Patrick Kamdem</div>
           <div className="text-sm leading-[1.125rem] mb-4">
-            Your own direct line to tailored support.
+            Ich helfe Ihnen gerne
           </div>
         </div>
         <div className="py-0">
@@ -51,7 +51,7 @@ const Psa = () => {
             href="http://patelot.de"
             className="p-[1rem] hover:text-white hover:font-bold"
           >
-            Learn more ...
+            Merh erfahren ...
           </a>
         </div>
       </div>
