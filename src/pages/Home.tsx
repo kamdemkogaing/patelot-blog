@@ -1,42 +1,11 @@
-import Footer from "../components/footer/Footer";
-import PatelotHeader from "../components/header/PatelotHeader";
-import PatelotNavBar from "../components/navbar/PatelotNavBar";
+import Page from "../assets/helpers/Page";
 import PatelotCards from "../components/need-grid/PatelotCards";
-import Psa from "../components/psa/Psa";
 
 const Home = () => {
-  const listElementNavBar: string[] = [
-    "Über mich",
-    "Projekte",
-    "Blog",
-    "Kontakt",
-    "Hobbys",
-  ];
-
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
-
-  // state
-
-  // comportement
-
-  //render
   return (
-    <>
-      <Psa />
-      <PatelotHeader
-        namePatelot="Patrick Kamdem"
-        rolePaletot="Frontend Entwickler"
-      />
-      <PatelotNavBar
-        items={listElementNavBar}
-        heading="navBar"
-        onSelectItem={handleSelectItem}
-      />
+    <Page>
       <PatelotCards />
-      <Footer />
-    </>
+    </Page>
   );
 };
 
