@@ -6,7 +6,7 @@ const CountryCard = ({ country }) => {
         src={country.flags.svg}
         alt={country.translations.deu.common}
       />
-      <div className="p-4 rounded-lg absolute bg-[#f4f4f4]">
+      <div className="p-4 rounded-lg absolute bg-[#f4f4f4] hidden lg:block md:block xl:block">
         <div className="break-all">Land: {country.translations.deu.common}</div>
         <div>Haupstadt: {country.capital}</div>
         <div>Bewölkerung: {country.population.toLocaleString()}</div>

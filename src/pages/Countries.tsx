@@ -41,9 +41,10 @@ const Countries = () => {
             max={250}
             defaultValue={rangeValue}
             onChange={handleChange}
+            className="mb-8 md:mb-0 lg:mb-0 xl:mb-0"
           />
 
-          <div className="flex flex-wrap gap-20">
+          <div className="flex flex-wrap lg:gap-20 xl:gap-20 md:gap-20 gap-5">
             {continents.map((el) => {
               return (
                 <div className={el}>
@@ -90,7 +91,7 @@ const Countries = () => {
             No Data to Show!
           </div>
         ) : (
-          <div className="flex flex-col justify-center items-center m-20">
+          <div className="flex flex-col justify-center items-center m-10 md:m-20 lg:m-20 xl-20">
             {selectedRadio && (
               <button
                 onClick={handleDelect}
@@ -99,7 +100,7 @@ const Countries = () => {
                 SUCHE ZURÜCKSETZEN
               </button>
             )}
-            <div className="grid grid-cols-5 gap-2">
+            <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-5 lg:gap-2 md:gap-2 grid grid-cols-2 gap-10">
               {data
                 ? data
                     .filter((country) => {
