@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const PatelotCards = () => {
   // state
 
@@ -91,11 +93,18 @@ const PatelotCards = () => {
             </a>
           </li>
           <li>
-            <a href="/country" className="text-[olive] font-bold">
+            {/* <a href="/country" className="text-[olive] font-bold">
               <span className="hover:text-[black]">
                 Projekt 6: Länder Karte
               </span>
-            </a>
+            </a> */}
+            <NavLink to="/country" className={"text-[olive] font-bold"}>
+              <li>
+                <span className="hover:text-[black]">
+                  Projekt 6: Länder Karte
+                </span>
+              </li>
+            </NavLink>
           </li>
         </ul>
         <div>
