@@ -13,8 +13,16 @@ const Page = (props: PageProps) => {
     "Über mich",
     "Projekte",
     "Blog",
-    "Kontakt",
     "Hobbys",
+    "Kontakt",
+  ];
+
+  const navBarArray: string[] = [
+    "home",
+    "projekte",
+    "blog",
+    "hobbys",
+    "kontakt",
   ];
 
   const handleSelectItem = (item: string) => {
@@ -30,6 +38,7 @@ const Page = (props: PageProps) => {
       />
       <PatelotNavBar
         items={listElementNavBar}
+        itemsLinkText={navBarArray}
         heading="navBar"
         onSelectItem={handleSelectItem}
       />

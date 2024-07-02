@@ -34,10 +34,16 @@ const PatelotCards = () => {
           Bootstrap, MySQL, UML, XAMPP, Photoshop, UX, UI.
         </p>
         <div>
-          <button
+          {/* <button
             className={
               "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
             }
+          >
+            Mehr erfahren ...
+          </button> */}
+          <button
+            disabled
+            className="bg-slate-400  px-4 py-2 rounded-md text-black"
           >
             Mehr erfahren ...
           </button>
@@ -59,6 +65,7 @@ const PatelotCards = () => {
           </li>
           <li>
             <a
+              target="_blank"
               href="https://www.ionos.com/domains/bulk-domain-search"
               className="text-[olive] font-bold"
             >
@@ -93,25 +100,24 @@ const PatelotCards = () => {
             </a>
           </li>
           <li>
-            {/* <a href="/country" className="text-[olive] font-bold">
+            <NavLink to="/country" className={"text-[olive] font-bold"}>
               <span className="hover:text-[black]">
                 Projekt 6: Länder Karte
               </span>
-            </a> */}
-            <NavLink to="/country" className={"text-[olive] font-bold"}>
-              <li>
-                <span className="hover:text-[black]">
-                  Projekt 6: Länder Karte
-                </span>
-              </li>
             </NavLink>
           </li>
         </ul>
         <div>
-          <button
+          {/* <button
             className={
               "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
             }
+          >
+            Mehr erfahren ...
+          </button> */}
+          <button
+            disabled
+            className="bg-slate-400  px-4 py-2 rounded-md text-black"
           >
             Mehr erfahren ...
           </button>
@@ -129,10 +135,16 @@ const PatelotCards = () => {
           Webentwicklung, neuen Technologien und Best Practices.
         </p>
         <div>
-          <button
+          {/* <button
             className={
               "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
             }
+          >
+            Mehr erfahren ...
+          </button> */}
+          <button
+            disabled
+            className="bg-slate-400  px-4 py-2 rounded-md text-black"
           >
             Mehr erfahren ...
           </button>
@@ -146,8 +158,25 @@ const PatelotCards = () => {
       >
         <h2 className={"text-3xl font-bold mb-4"}>Kontakt</h2>
         <p className={"text-[olive]"}>
-          Du kannst mich unter der folgenden E-Mail-Adresse erreichen:
+          Ich freue mich immer über Nachrichten und Feedback von meinen Lesern!
+          Wenn Du Fragen hast oder einfach nur "Hallo" sagen willst, zögere
+          nicht, mich zu kontaktieren.
         </p>
+        <p className={"text-[olive]"}>So erreichst du mich:</p>
+        <ul className="space-y-2 mb-4 list-decimal pl-10">
+          <li className="font-bold">
+            <a href="mailto:patrick-kamdem@patelot.de">
+              patrick-kamdem@patelot.de
+            </a>
+          </li>
+          <li className="font-bold">WhatsApp: +491714170604</li>
+          <li className="font-bold">
+            <a href="https://www.facebook.com/patrick.kamdem">Facebook</a>
+          </li>
+          <li className="font-bold">
+            <a href="https://www.xing.com/profile/Patrick_Kamdem3">XING</a>
+          </li>
+        </ul>
         <div>
           <button
             className={
@@ -166,8 +195,11 @@ const PatelotCards = () => {
       >
         <h2 className={"text-3xl font-bold mb-4"}>Reise</h2>
         <p className={"text-[olive]"}>
-          Willkommen in meinem Blog! Hier teile ich meine Gedanken zu
-          Webentwicklung, neuen Technologien und Best Practices.
+          Willkommen zu meinem Reiseblog! Ich bin Patrick, ein
+          leidenschaftlicher Reisender, der es liebt, neue Kulturen zu
+          entdecken, atemberaubende Landschaften zu erkunden und spannende
+          Abenteuer zu erleben. In diesem Blog teile ich meine Reiseerlebnisse,
+          Tipps und Fotos von meinen Abenteuern rund um den Globus.
         </p>
         <div>
           <button
@@ -175,7 +207,9 @@ const PatelotCards = () => {
               "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
             }
           >
-            Mehr erfahren ...
+            <a href="https://de.wikipedia.org/wiki/Kamerun" target="_blank">
+              Mehr erfahren ...
+            </a>
           </button>
         </div>
       </div>
@@ -185,9 +219,13 @@ const PatelotCards = () => {
           " bg-zinc-100 shadow-lg p-8 border border-zinc-300 rounded-lg flex flex-col gap-4 place-items-stretch"
         }
       >
-        <h2 className={"text-3xl font-bold mb-4"}>Hobbies</h2>
-        <p className={"text-[olive]"}>In meiner Freizeit genieße ich:</p>
-        <ul className="space-y-2 mb-4 list-decimal">
+        <h2 className={"text-3xl font-bold mb-4"}>Hobbys</h2>
+        <p className={"text-[olive]"}>
+          Neben dem Reisen habe ich noch einige andere Leidenschaften, die mein
+          Leben bereichern und mir helfen, mich zu entspannen und kreativ zu
+          sein. Hier sind einige meiner liebsten Hobbys:
+        </p>
+        <ul className="space-y-2 mb-4 list-decimal pl-10">
           <li className="font-bold">Meine Kinder</li>
           <li className="font-bold">Computer</li>
           <li className="font-bold">Internet</li>
@@ -197,10 +235,16 @@ const PatelotCards = () => {
           <li className="font-bold">Essen</li>
         </ul>
         <div>
-          <button
+          {/* <button
             className={
               "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
             }
+          >
+            Mehr erfahren ...
+          </button> */}
+          <button
+            disabled
+            className="bg-slate-400  px-4 py-2 rounded-md text-black"
           >
             Mehr erfahren ...
           </button>

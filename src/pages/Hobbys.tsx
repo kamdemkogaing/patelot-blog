@@ -1,5 +1,14 @@
+import PatelotModal from "../assets/helpers/Baustelle";
+import Page from "../assets/helpers/Page";
+
 const Hobbys = () => {
-  return <div></div>;
+  return (
+    <>
+      <Page>
+        <PatelotModal />
+      </Page>
+    </>
+  );
 };
 
 export default Hobbys;

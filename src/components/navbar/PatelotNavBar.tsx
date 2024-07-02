@@ -1,9 +1,11 @@
 import classNames from "classnames";
 import { ReactNode, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 
 type PropNavBar = {
   items: string[];
+  itemsLinkText: string[];
   heading: string;
   onSelectItem: (item: string) => void;
   children?: ReactNode;
@@ -11,6 +13,7 @@ type PropNavBar = {
 
 const PatelotNavBar = ({
   items,
+  itemsLinkText,
   heading,
   children,
   onSelectItem,
@@ -54,7 +57,7 @@ const PatelotNavBar = ({
                   `${
                     selectedIndex === index
                       ? "border-b-[olive] border-b-4 success"
-                      : " "
+                      : ""
                   }`,
                   `${scrolled ? "text-[#f4f4f4]" : "text-[olive]"}`
                 )}
@@ -63,7 +66,7 @@ const PatelotNavBar = ({
                   onSelectItem(element);
                 }}
               >
-                {element}
+                <Link to={`/${itemsLinkText[index]}`}>{element}</Link>
               </li>
             ))}
           </ul>

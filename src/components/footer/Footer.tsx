@@ -37,9 +37,30 @@ const Footer = () => {
                   <div className="text-base leading-6 w-full font-bold my-6 lg:my-0 bright text-black">
                     NÜTZLICHE LINKS
                   </div>
-                  <div className="w-full my-2">KAMDEM GmbH</div>
-                  <div className="w-full my-2">Yan'son IT Consulting</div>
-                  <div className="w-full my-2">PouaHom Germany e.V.</div>
+
+                  <div className="w-full my-2">
+                    <a href="https://yanson.de/" target="_blank">
+                      Yan'son IT Consulting
+                    </a>
+                  </div>
+                  <div className="w-full my-2">
+                    <a href="http://pouahom.de/" target="_blank">
+                      PouaHom Germany e.V.
+                    </a>
+                  </div>
+                  <div className="w-full my-2">
+                    <a href="https://www.osteo-vital.de/" target="_blank">
+                      osteo-vital
+                    </a>
+                  </div>
+                  <div className="w-full my-2">
+                    <a
+                      href="https://baumann-isolierungen-gmbh.weblocator.de/"
+                      target="_blank"
+                    >
+                      Baumann Isolierung GmbH
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -50,7 +71,11 @@ const Footer = () => {
                     KONTAKT
                   </div>
                   <div className="w-full my-2">Deutschland, Oberkirch</div>
-                  <div className="w-full my-2">info@patelot.de</div>
+                  <div className="w-full my-2">
+                    <a href="mailto:patrick-kamdem@patelot.de">
+                      patrick-kamdem@patelot.de
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
