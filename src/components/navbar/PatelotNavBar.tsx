@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { ReactNode, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 
 type PropNavBar = {
@@ -52,21 +52,23 @@ const PatelotNavBar = ({
             {items.map((element, index) => (
               <li
                 key={`navElement-${index}, ${heading}`}
-                className={classNames(
-                  "my-0 mx-4 p-3 font-bold cursor-pointer hover:text-[black]",
-                  `${
-                    selectedIndex === index
-                      ? "border-b-[olive] border-b-4 success"
-                      : ""
-                  }`,
-                  `${scrolled ? "text-[#f4f4f4]" : "text-[olive]"}`
-                )}
                 onClick={() => {
                   setSelectedIndex(index);
                   onSelectItem(element);
                 }}
+                className={classNames(
+                  "my-0 mx-4 p-3 font-bold cursor-pointer hover:text-[black] ",
+                  `${scrolled ? "text-[#f4f4f4]" : "text-[olive]"}`
+                )}
               >
-                <Link to={`/${itemsLinkText[index]}`}>{element}</Link>
+                <NavLink
+                  to={`/${itemsLinkText[index]}`}
+                  className={({ isActive }) =>
+                    isActive ? "border-b-[olive] border-b-4 pb-6" : ` `
+                  }
+                >
+                  {element}
+                </NavLink>
               </li>
             ))}
           </ul>

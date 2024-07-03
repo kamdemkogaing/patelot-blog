@@ -25,9 +25,7 @@ const Page = (props: PageProps) => {
     "kontakt",
   ];
 
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
+  const handleSelectItem = (item: string) => {};
 
   return (
     <>

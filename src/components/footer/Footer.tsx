@@ -39,26 +39,48 @@ const Footer = () => {
                   </div>
 
                   <div className="w-full my-2">
-                    <a href="https://yanson.de/" target="_blank">
+                    <a
+                      className="underline underline-offset-8"
+                      href="https://yanson.de/"
+                      target="_blank"
+                    >
                       Yan'son IT Consulting
                     </a>
                   </div>
                   <div className="w-full my-2">
-                    <a href="http://pouahom.de/" target="_blank">
+                    <a
+                      className="underline underline-offset-8"
+                      href="http://pouahom.de/"
+                      target="_blank"
+                    >
                       PouaHom Germany e.V.
                     </a>
                   </div>
                   <div className="w-full my-2">
-                    <a href="https://www.osteo-vital.de/" target="_blank">
+                    <a
+                      className="underline underline-offset-8"
+                      href="https://www.osteo-vital.de/"
+                      target="_blank"
+                    >
                       osteo-vital
                     </a>
                   </div>
                   <div className="w-full my-2">
                     <a
+                      className="underline underline-offset-8"
                       href="https://baumann-isolierungen-gmbh.weblocator.de/"
                       target="_blank"
                     >
                       Baumann Isolierung GmbH
+                    </a>
+                  </div>
+                  <div className="w-full my-2">
+                    <a
+                      className="underline underline-offset-8"
+                      href="https://www.maskenschnitzerei.de/"
+                      target="_blank"
+                    >
+                      Maskenschnitzerei Ducksch
                     </a>
                   </div>
                 </div>

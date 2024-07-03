@@ -30,8 +30,9 @@ const PatelotCards = () => {
           Ich bin Patrick Kamdem, ein leidenschaftlicher Frontend Entwickler mit
           Erfahrung in der Erstellung moderner und benutzerfreundlicher
           Webanwendungen. Meine Fähigkeiten umfassen HTML, CSS, XML/XSLT,
-          XSD-Schema, JavaScript, JQuery, Node.js, React.js, TypeScript, Ajax,
-          Bootstrap, MySQL, UML, XAMPP, Photoshop, UX, UI.
+          XSD-Schema, JavaScript, JQuery, Node.js, React.js, Angular,
+          TypeScript, Ajax, Bootstrap, MySQL, UML, XAMPP, Photoshop, UX, UI,
+          ADOBE Target Test.
         </p>
         <div>
           {/* <button

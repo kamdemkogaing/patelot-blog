@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
   // state
@@ -55,36 +56,21 @@ const HamburgerMenu = () => {
           isOpen ? "block" : "hidden"
         } shadow-lg p-8 border border-zinc-300 bg-zinc-100 `}
       >
-        <a
-          href="#"
-          className="block lg:inline-block px-4 py-2  hover:bg-gray-200 lg:hover:bg-transparent lg:border-none text-[olive] font-bold"
-        >
+        <Link to="/home" className="block px-4 py-2 text-[olive] font-bold">
           Über mich
-        </a>
-        <a
-          href="#"
-          className="block lg:inline-block px-4 py-2 text-[olive] font-bold hover:bg-gray-200 lg:hover:bg-transparent lg:border-none"
-        >
+        </Link>
+        <Link to="/projekte" className="block px-4 py-2 text-[olive] font-bold">
           Projekte
-        </a>
-        <a
-          href="#"
-          className="block lg:inline-block px-4 py-2 text-[olive] font-bold hover:bg-gray-200 lg:hover:bg-transparent lg:border-none"
-        >
+        </Link>
+        <Link to="/blog" className="block px-4 py-2 text-[olive] font-bold">
           Blog
-        </a>
-        <a
-          href="#"
-          className="block lg:inline-block px-4 py-2 text-[olive] font-bold hover:bg-gray-200 lg:hover:bg-transparent lg:border-none"
-        >
-          Kontakt
-        </a>
-        <a
-          href="#"
-          className="block lg:inline-block px-4 py-2 text-[olive] font-bold hover:bg-gray-200 lg:hover:bg-transparent lg:border-none"
-        >
+        </Link>
+        <Link to="/hobbys" className="block px-4 py-2 text-[olive] font-bold">
           Hobbys
-        </a>
+        </Link>
+        <Link to="/kontakt" className="block px-4 py-2 text-[olive] font-bold">
+          Kontakt
+        </Link>
       </div>
     </div>
   );
