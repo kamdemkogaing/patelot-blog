@@ -1,13 +1,11 @@
-import PatelotModal from "../assets/helpers/Baustelle";
 import Page from "../assets/helpers/Page";
+import EmailForm from "../components/form/EmailForm";
 
 const Contact = () => {
   return (
     <>
       <Page>
-        <div className="container mx-auto">
-          <PatelotModal />
-        </div>
+        <EmailForm />
       </Page>
     </>
   );
