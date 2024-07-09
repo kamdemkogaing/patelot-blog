@@ -1,11 +1,12 @@
 import Page from "../assets/helpers/Page";
-import EmailForm from "../components/form/EmailForm";
+import EmailFormRestAPI from "../components/form/EmailFormRestAPI";
 
 const Contact = () => {
   return (
     <>
       <Page>
-        <EmailForm />
+        {/* <EmailForm /> */}
+        <EmailFormRestAPI />
       </Page>
     </>
   );

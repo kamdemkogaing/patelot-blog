@@ -8,8 +8,8 @@ const Countries = () => {
 
   const [rangeValue, setRangeValue] = useState<number>(30);
   const [selectedRadio, setSelectedRadio] = useState<string>("");
-  const fetcher = (args) => fetch(args).then((res) => res.json());
 
+  const fetcher = (args) => fetch(args).then((res) => res.json());
   const { data, isValidating, error, isLoading } = useSWR(
     "https://restcountries.com/v3.1/all",
     fetcher

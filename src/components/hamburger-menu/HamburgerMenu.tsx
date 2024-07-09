@@ -14,7 +14,14 @@ const HamburgerMenu = () => {
   return (
     <div className={"block lg:hidden md:hidden xl:hidden"}>
       <nav className="bg-white shadow-md p-4 flex flex-wrap justify-between items-center">
-        <div className="text-xl font-bold">Meine Webseite</div>
+        <div className="text-xl font-bold">
+          <img
+            src="./img/pk_logo_transparent.png"
+            alt="logo_pk"
+            width={50}
+            height={50}
+          />
+        </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isOpen ? (

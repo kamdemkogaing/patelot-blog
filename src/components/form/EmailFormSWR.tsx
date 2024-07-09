@@ -1,14 +1,14 @@
-import axios from "axios";
 import { useState } from "react";
+import useSWR from "swr";
 
-const EmailFormRestAPI = () => {
+const EmailFormSWR = () => {
   // state
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   // comportement
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     // Your EmailJS service ID, template ID, and Public Key
@@ -17,7 +17,7 @@ const EmailFormRestAPI = () => {
     const publicKey = "vUVw9wfTXfv9P3mos";
 
     // Create an object withEmailJS service ID, template ID, Public key and Template params
-    const data = {
+    const emailData = {
       service_id: serviceId,
       template_id: templateId,
       user_id: publicKey,
@@ -29,22 +29,13 @@ const EmailFormRestAPI = () => {
       },
     };
 
-    // send the email using EmailJS
-    try {
-      const res = await axios.post(
-        "https://api.emailjs.com/api/v1.0/email/send",
-        data
-      );
-      console.log(res.data);
-      setName("");
-      setEmail("");
-      setMessage("");
-    } catch (error) {
-      console.error(error);
-    }
+    const fetcher = (args) => fetch(args).then((res) => res.json());
+    const { data, error } = useSWR(
+      "https://api.emailjs.com/api/v1.0/email/send",
+      fetcher
+    );
   };
 
-  // render
   return (
     <div className="container mx-auto my-10 flex flex-wrap justify-center items-center p-4">
       <form onSubmit={handleSubmit}>
@@ -101,4 +92,4 @@ const EmailFormRestAPI = () => {
   );
 };
 
-export default EmailFormRestAPI;
+export default EmailFormSWR;
