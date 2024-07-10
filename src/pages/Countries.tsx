@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useSWR from "swr";
-import Page from "../assets/helpers/Page";
 import CountryCard from "../components/country-card/CountryCard";
 
 const Countries = () => {
@@ -32,7 +31,7 @@ const Countries = () => {
 
   // Render
   return (
-    <Page>
+    <>
       <div className="container mx-auto ">
         <div className="m-8 p-4 rounded-lg border bg-[#f4f4f4] flex flex-wrap justify-between items-center">
           <input
@@ -116,7 +115,7 @@ const Countries = () => {
           </div>
         )}
       </div>
-    </Page>
+    </>
   );
 };
 

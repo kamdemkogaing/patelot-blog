@@ -19,6 +19,7 @@ const CreatePost = ({ addPost }) => {
     <form onSubmit={handleSubmit} className="m-8">
       <div className="p-4 w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
         <input
+          required
           type="text"
           placeholder="Title"
           value={title}
@@ -26,6 +27,7 @@ const CreatePost = ({ addPost }) => {
           className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
         />
         <textarea
+          required
           cols={60}
           rows={5}
           placeholder="Content"
