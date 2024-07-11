@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import Footer from "../../components/footer/Footer";
 import PatelotHeader from "../../components/header/PatelotHeader";
 import PatelotNavBar from "../../components/navbar/PatelotNavBar";
-import Psa from "../../components/psa/Psa";
 
 type PageProps = {
   children: ReactNode;
@@ -29,7 +28,6 @@ const Page = (props: PageProps) => {
 
   return (
     <>
-      <Psa />
       <PatelotHeader
         namePatelot="Patrick Kamdem"
         rolePaletot="Frontend Entwickler"

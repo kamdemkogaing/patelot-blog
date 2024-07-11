@@ -1,5 +1,6 @@
 import Page from "../assets/helpers/Page";
 import PatelotCards from "../components/need-grid/PatelotCards";
+import Psa from "../components/psa/Psa";
 import Stage from "../components/stage/Stage";
 
 const Home = () => {
@@ -17,9 +18,10 @@ const Home = () => {
   // render
   return (
     <Page>
+      <Psa />
       <Stage
         preline="IT Lösungen"
-        headline="Die Website mit modernen Technologien bauen"
+        headline="Eine Website mit modernen Technologien bauen"
         checkmark={itOffers}
       />
       <PatelotCards />

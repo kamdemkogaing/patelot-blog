@@ -1,5 +1,5 @@
 const Stage = ({ preline, headline, checkmark }) => {
-  // stage
+  // state
 
   // comportement
 
