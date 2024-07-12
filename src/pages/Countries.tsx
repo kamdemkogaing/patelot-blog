@@ -1,20 +1,34 @@
-import { useState } from "react";
-import useSWR from "swr";
+import { useEffect, useState } from "react";
 import CountryCard from "../components/country-card/CountryCard";
 
 const Countries = () => {
+  // state
   const continents = ["Africa", "America", "Europe", "Asia", "Oceania"];
 
   const [rangeValue, setRangeValue] = useState<number>(30);
   const [selectedRadio, setSelectedRadio] = useState<string>("");
 
-  const fetcher = (args) => fetch(args).then((res) => res.json());
-  const { data, isValidating, error, isLoading } = useSWR(
-    "https://restcountries.com/v3.1/all",
-    fetcher
-  );
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // state
+  useEffect(() => {
+    fetch("https://restcountries.com/v3.1/all")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, []);
 
   //comportements
   const handleChange = (e) => {
@@ -61,7 +75,7 @@ const Countries = () => {
           </div>
         </div>
 
-        {(isValidating && !error) || isLoading ? (
+        {loading ? (
           <div className="border border-[olive] shadow rounded-md p-4 max-w-sm w-full mx-auto">
             <div className="animate-pulse flex space-x-4">
               <div className="rounded-full bg-slate-200 h-10 w-10"></div>
@@ -79,41 +93,29 @@ const Countries = () => {
           </div>
         ) : null}
 
-        {error ? (
-          <div className="border border-[olive] shadow rounded-md p-4 max-w-sm w-full mx-auto text-xl text-[black]">
-            {error.message}{" "}
+        <div className="flex flex-col justify-center items-center m-10 md:m-20 lg:m-20 xl-20">
+          {selectedRadio && (
+            <button
+              onClick={handleDelect}
+              className="p-4 rounded-lg bg-[olive] mb-4 hover:bg-[#f4f4f4] hover:border-2 hover:text-[black] hover:font-bold"
+            >
+              SUCHE ZURÜCKSETZEN
+            </button>
+          )}
+          <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-5 lg:gap-2 md:gap-2 grid grid-cols-2 gap-10">
+            {data
+              ? data
+                  .filter((country) => {
+                    return country.continents[0].includes(selectedRadio);
+                  })
+                  /* .sort((a, b) => b.population - a.population) */
+                  .slice(0, rangeValue)
+                  .map((country, index) => (
+                    <CountryCard key={index} country={country} />
+                  ))
+              : ""}
           </div>
-        ) : null}
-
-        {!data?.length && !isValidating && !error ? (
-          <div className="border border-[olive] shadow rounded-md p-4 max-w-sm w-full mx-auto text-xl text-[black]">
-            No Data to Show!
-          </div>
-        ) : (
-          <div className="flex flex-col justify-center items-center m-10 md:m-20 lg:m-20 xl-20">
-            {selectedRadio && (
-              <button
-                onClick={handleDelect}
-                className="p-4 rounded-lg bg-[olive] mb-4 hover:bg-[#f4f4f4] hover:border-2 hover:text-[black] hover:font-bold"
-              >
-                SUCHE ZURÜCKSETZEN
-              </button>
-            )}
-            <div className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-5 lg:gap-2 md:gap-2 grid grid-cols-2 gap-10">
-              {data
-                ? data
-                    .filter((country) => {
-                      return country.continents[0].includes(selectedRadio);
-                    })
-                    /* .sort((a, b) => b.population - a.population) */
-                    .slice(0, rangeValue)
-                    .map((country, index) => (
-                      <CountryCard key={index} country={country} />
-                    ))
-                : ""}
-            </div>
-          </div>
-        )}
+        </div>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import Page from "../assets/helpers/Page";
+import PasswordGenerator from "../components/password-genarator/PasswordGenerator";
 import Stage from "../components/stage/Stage";
 import Countries from "./Countries";
 
@@ -19,6 +20,7 @@ const Project = () => {
         checkmark={itOffers}
       />
       <Countries />
+      <PasswordGenerator />
     </Page>
   );
 };
