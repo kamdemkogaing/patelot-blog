@@ -1,3 +1,10 @@
+import {
+  FaJira,
+  FaLinux,
+  FaSave,
+  FaSearchengin,
+  FaTwitter,
+} from "react-icons/fa";
 import Page from "../assets/helpers/Page";
 import PatelotCards from "../components/need-grid/PatelotCards";
 import Psa from "../components/psa/Psa";
@@ -13,6 +20,14 @@ const Home = () => {
     "Softwareentwicklung",
   ];
 
+  const icons = [
+    <FaSearchengin />,
+    <FaJira />,
+    <FaLinux />,
+    <FaSave />,
+    <FaTwitter />,
+  ];
+
   // comportement
 
   // render
@@ -23,6 +38,7 @@ const Home = () => {
         preline="IT Lösungen"
         headline="Eine Website mit modernen Technologien bauen"
         checkmark={itOffers}
+        icons={icons}
       />
       <PatelotCards />
     </Page>
