@@ -22,6 +22,7 @@ const PatelotNavBar = ({
   //state
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [scrolled, isScrolled] = useState<boolean>(false);
+  const [isNavActive, setIsNavActive] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
