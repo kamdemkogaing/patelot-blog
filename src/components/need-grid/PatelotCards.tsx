@@ -27,12 +27,15 @@ const PatelotCards = () => {
 
         <h2 className={"text-3xl font-bold mb-4"}>Über mich</h2>
         <p className={"text-[olive]"}>
-          Ich bin Patrick Kamdem, ein leidenschaftlicher Frontend Entwickler mit
-          Erfahrung in der Erstellung moderner und benutzerfreundlicher
-          Webanwendungen. Meine Fähigkeiten umfassen HTML, CSS, XML/XSLT,
-          XSD-Schema, JavaScript, JQuery, Node.js, React.js, Angular,
-          TypeScript, Ajax, Bootstrap, MySQL, UML, XAMPP, Photoshop, UX, UI,
-          ADOBE Target Test.
+          Mein Name ist Patrick Kamdem, und ich bin ein engagierter
+          Frontend-Entwickler mit umfassender Erfahrung in der Entwicklung
+          moderner, benutzerfreundlicher Webanwendungen. Ich beherrsche eine
+          Vielzahl von Technologien, darunter HTML, CSS, XML/XSLT, XSD-Schema,
+          JavaScript, JQuery, Node.js, Next.js, React.js, TypeScript, Ajax,
+          Bootstrap, Tailwind CSS und daisyUI. Zusätzlich verfüge ich über
+          fundierte Kenntnisse in MySQL, UML, XAMPP, UX/UI-Design, Photoshop,
+          ADOBE Target Test, SEA/SEO sowie im Bereich E-Commerce und
+          Online-Shops.
         </p>
         <div>
           {/* <button
