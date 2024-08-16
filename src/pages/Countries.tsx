@@ -25,7 +25,7 @@ const Countries = () => {
         setLoading(false);
       })
       .catch((error) => {
-        setError(error);
+        setError(error.message);
         setLoading(false);
       });
   }, []);
@@ -39,8 +39,8 @@ const Countries = () => {
     setSelectedRadio(e.target.id);
   };
 
-  const handleDelect = () => {
-    setSelectedRadio("");
+  const handleDelete = () => {
+    setSelectedRadio(" ");
   };
 
   // Render
@@ -96,7 +96,7 @@ const Countries = () => {
         <div className="flex flex-col justify-center items-center m-10 md:m-20 lg:m-20 xl-20">
           {selectedRadio && (
             <button
-              onClick={handleDelect}
+              onClick={handleDelete}
               className="p-4 rounded-lg bg-[olive] mb-4 hover:bg-[#f4f4f4] hover:border-2 hover:text-[black] hover:font-bold"
             >
               SUCHE ZURÜCKSETZEN
@@ -108,12 +108,12 @@ const Countries = () => {
                   .filter((country) => {
                     return country.continents[0].includes(selectedRadio);
                   })
-                  /* .sort((a, b) => b.population - a.population) */
+                  .sort((a, b) => b.population - a.population)
                   .slice(0, rangeValue)
                   .map((country, index) => (
                     <CountryCard key={index} country={country} />
                   ))
-              : ""}
+              : " "}
           </div>
         </div>
       </div>
