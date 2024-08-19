@@ -1,6 +1,4 @@
 import { useState } from "react";
-import DomainChecker from "../domain-checker/DomainChecker";
-import WorldMap from "../world-map/WorldMap";
 
 const PasswordGenerator = () => {
   // state
@@ -34,9 +32,9 @@ const PasswordGenerator = () => {
   //render
   return (
     <div className="bg-black p-4 text-white">
-      <div className="container mx-auto my-8">
-        <div className="flex flex-wrap space-x-0 md:space-x-10 lg:space-x-10 xl:space-x-10 justify-start items-center">
-          <div className="bg-[olive] w-full md:w-1/2 lg:w-3/12 p-4 mb-4 rounded-lg">
+      <div className="container mx-auto mt-8">
+        <div className="flex flex-wrap space-x-0 md:space-x-10 lg:space-x-10 xl:space-x-10 justify-center items-center">
+          <div className="bg-[olive] w-full md:w-1/2 lg:w-4/12 p-4 mb-4 rounded-lg">
             <div className="block text-2xl font-overpass-regular my-4">
               Password Generator
             </div>
@@ -47,7 +45,7 @@ const PasswordGenerator = () => {
                     type="number"
                     value={length}
                     onChange={(e) => setLength(parseInt(e.target.value, 10))}
-                    className="p-3 w-20 h-10 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    className="p-3 w-20 h-10 input input-bordered"
                   />
                   <label className="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Großbuchstaben einschließen
@@ -60,7 +58,7 @@ const PasswordGenerator = () => {
                     type="checkbox"
                     checked={includeUppercase}
                     onChange={(e) => setIncludeUppercase(e.target.checked)}
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    className="checkbox"
                   />
                   <label className="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Großbuchstaben einschließen
@@ -73,7 +71,7 @@ const PasswordGenerator = () => {
                     type="checkbox"
                     checked={includeNumbers}
                     onChange={(e) => setIncludeNumbers(e.target.checked)}
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    className="checkbox"
                   />
                   <label className="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Zahlen einschließen
@@ -86,7 +84,7 @@ const PasswordGenerator = () => {
                     type="checkbox"
                     checked={includeSymbols}
                     onChange={(e) => setIncludeSymbols(e.target.checked)}
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    className="checkbox"
                   />
                   <label className="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Symbole einschließen
@@ -95,7 +93,7 @@ const PasswordGenerator = () => {
               </li>
             </ul>
             <button
-              className="inline-flex items-center px-5 py-2.5 text-sm text-center text-black hover:text-[olive] bg-white rounded-lg focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 hover:bg-slate-300 font-bold my-4"
+              className="inline-flex items-center px-5 py-2.5 text-sm text-center text-black hover:text-[white] bg-white rounded-lg focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-900 hover:bg-[black] font-bold my-4"
               onClick={generatePassword}
             >
               Generieren
@@ -104,12 +102,6 @@ const PasswordGenerator = () => {
               <div className="font-bold">Generiertes Passwort:</div>
               <div className="text-xl break-words">{password}</div>
             </div>
-          </div>
-          <div className="bg-[olive] w-full md:w-1/2 lg:w-5/12 p-4 mb-4 rounded-lg">
-            <WorldMap />
-          </div>
-          <div className=" bg-[olive] w-full md:w-1/2 lg:w-3/12 p-4 mb-4 rounded-lg">
-            <DomainChecker />
           </div>
         </div>
       </div>

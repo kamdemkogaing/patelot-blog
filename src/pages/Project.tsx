@@ -6,8 +6,10 @@ import {
   FaSearchengin,
 } from "react-icons/fa";
 import Page from "../assets/helpers/Page";
+import DomainChecker from "../components/domain-checker/DomainChecker";
 import PasswordGenerator from "../components/password-genarator/PasswordGenerator";
 import Stage from "../components/stage/Stage";
+import WorldMap from "../components/world-map/WorldMap";
 import Countries from "./Countries";
 
 const Project = () => {
@@ -36,6 +38,8 @@ const Project = () => {
       />
       <Countries />
       <PasswordGenerator />
+      <WorldMap />
+      <DomainChecker />
     </Page>
   );
 };

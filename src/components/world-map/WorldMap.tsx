@@ -7,24 +7,28 @@ const handleClick = (geo) => {
 };
 
 const WorldMap = () => (
-  <ComposableMap>
-    <Geographies geography={geoUrl}>
-      {({ geographies }) =>
-        geographies.map((geo) => (
-          <Geography
-            key={geo.rsmKey}
-            geography={geo}
-            onClick={() => handleClick(geo)}
-            style={{
-              default: { fill: "#D6D6DA", outline: "none" },
-              hover: { fill: "#22220e", outline: "none" },
-              pressed: { fill: "#1f1f0b", outline: "none" },
-            }}
-          />
-        ))
-      }
-    </Geographies>
-  </ComposableMap>
+  <div className="bg-[olive]">
+    <div className="container mx-auto">
+      <ComposableMap>
+        <Geographies geography={geoUrl}>
+          {({ geographies }) =>
+            geographies.map((geo) => (
+              <Geography
+                key={geo.rsmKey}
+                geography={geo}
+                onClick={() => handleClick(geo)}
+                style={{
+                  default: { fill: "#D6D6DA", outline: "none" },
+                  hover: { fill: "#22220e", outline: "none" },
+                  pressed: { fill: "#1f1f0b", outline: "none" },
+                }}
+              />
+            ))
+          }
+        </Geographies>
+      </ComposableMap>
+    </div>
+  </div>
 );
 
 export default WorldMap;

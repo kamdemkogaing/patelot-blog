@@ -1,34 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CountryCard from "../components/country-card/CountryCard";
+import useDataCountriesSelection from "../hooks/useDataCountriesSelection";
 
 const Countries = () => {
   // state
   const continents = ["Africa", "America", "Europe", "Asia", "Oceania"];
 
   const [rangeValue, setRangeValue] = useState<number>(30);
-  const [selectedRadio, setSelectedRadio] = useState<string>("");
+  const [selectedRadio, setSelectedRadio] = useState<string>(" ");
 
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
-  }, []);
+  const { data, isLoading, error } = useDataCountriesSelection(
+    "https://restcountries.com/v3.1/all"
+  );
 
   //comportements
   const handleChange = (e) => {
@@ -54,19 +37,20 @@ const Countries = () => {
             max={250}
             defaultValue={rangeValue}
             onChange={handleChange}
-            className="mb-8 md:mb-0 lg:mb-0 xl:mb-0"
+            className="mb-8 md:mb-0 lg:mb-0 xl:mb-0 range lg:w-64 sm:w-full"
           />
 
           <div className="flex flex-wrap lg:gap-20 xl:gap-20 md:gap-20 gap-5">
-            {continents.map((el) => {
+            {continents.map((el, index) => {
               return (
-                <div className={el}>
+                <div className="{el}" key={index}>
                   <input
                     checked={el === selectedRadio}
                     type="radio"
                     name="continent"
                     id={el}
                     onChange={handleSelected}
+                    className="radio"
                   />
                   <label htmlFor={el}> {el}</label>
                 </div>
@@ -75,7 +59,7 @@ const Countries = () => {
           </div>
         </div>
 
-        {loading ? (
+        {isLoading ? (
           <div className="border border-[olive] shadow rounded-md p-4 max-w-sm w-full mx-auto">
             <div className="animate-pulse flex space-x-4">
               <div className="rounded-full bg-slate-200 h-10 w-10"></div>
@@ -94,7 +78,7 @@ const Countries = () => {
         ) : null}
 
         <div className="flex flex-col justify-center items-center m-10 md:m-20 lg:m-20 xl-20">
-          {selectedRadio && (
+          {selectedRadio !== " " && (
             <button
               onClick={handleDelete}
               className="p-4 rounded-lg bg-[olive] mb-4 hover:bg-[#f4f4f4] hover:border-2 hover:text-[black] hover:font-bold"
