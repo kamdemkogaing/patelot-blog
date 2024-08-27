@@ -8,6 +8,7 @@ import {
 import Page from "../assets/helpers/Page";
 import EmailFormRestAPI from "../components/form/EmailFormRestAPI";
 import Stage from "../components/stage/Stage";
+import KamdemStage from "/img/patelot.png";
 
 const Contact = () => {
   const itOffers: string[] = [
@@ -34,6 +35,7 @@ const Contact = () => {
           headline="Zusammen finden wir eine Lösung für Sie"
           checkmark={itOffers}
           icons={icons}
+          imgStageSrc={KamdemStage}
         />
         <EmailFormRestAPI />
       </Page>

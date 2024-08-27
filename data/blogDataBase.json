@@ -1,0 +1,103 @@
+{
+  "blog": {
+    "name": "My Awesome Blog",
+    "description": "A blog about tech, travel, and life.",
+    "url": "https://myawesomeblog.com",
+    "posts": [
+      {
+        "id": 1,
+        "title": "Understanding JSON",
+        "slug": "understanding-json",
+        "content": "JSON stands for JavaScript Object Notation...",
+        "author_id": 1,
+        "date_published": "2024-08-22",
+        "categories": ["Tech"],
+        "tags": ["json", "javascript", "data"],
+        "comments": [
+          {
+            "id": 1,
+            "author": "Jane Doe",
+            "date": "2024-08-23",
+            "content": "Great post! Very informative."
+          },
+          {
+            "id": 2,
+            "author": "John Smith",
+            "date": "2024-08-24",
+            "content": "I learned a lot, thanks!"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Top 10 Travel Destinations for 2024",
+        "slug": "top-10-travel-destinations-2024",
+        "content": "Here are the top 10 travel destinations for 2024...",
+        "author_id": 2,
+        "date_published": "2024-08-20",
+        "categories": ["Travel"],
+        "tags": ["travel", "destinations", "2024"],
+        "comments": [
+          {
+            "id": 3,
+            "author": "Alice Johnson",
+            "date": "2024-08-21",
+            "content": "Can't wait to visit these places!"
+          }
+        ]
+      }
+    ],
+    "authors": [
+      {
+        "id": 1,
+        "name": "Alice Brown",
+        "bio": "Alice is a software developer with a passion for teaching.",
+        "email": "alice@myawesomeblog.com",
+        "profile_picture": "https://myawesomeblog.com/images/alice.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Bob Johnson",
+        "bio": "Bob is a travel enthusiast who loves to share his adventures.",
+        "email": "bob@myawesomeblog.com",
+        "profile_picture": "https://myawesomeblog.com/images/bob.jpg"
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Tech"
+      },
+      {
+        "id": 2,
+        "name": "Travel"
+      }
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "json"
+      },
+      {
+        "id": 2,
+        "name": "javascript"
+      },
+      {
+        "id": 3,
+        "name": "data"
+      },
+      {
+        "id": 4,
+        "name": "travel"
+      },
+      {
+        "id": 5,
+        "name": "destinations"
+      },
+      {
+        "id": 6,
+        "name": "2024"
+      }
+    ]
+  }
+}

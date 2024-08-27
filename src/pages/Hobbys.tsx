@@ -8,6 +8,7 @@ import {
 import PatelotModal from "../assets/helpers/Baustelle";
 import Page from "../assets/helpers/Page";
 import Stage from "../components/stage/Stage";
+import KamdemStage from "/img/patelot.png";
 
 const Hobbys = () => {
   const itOffers: string[] = [
@@ -34,6 +35,7 @@ const Hobbys = () => {
           headline="Die Website mit modernen Technologien bauen"
           checkmark={itOffers}
           icons={icons}
+          imgStageSrc={KamdemStage}
         />
         <PatelotModal />
       </Page>

@@ -3,6 +3,7 @@ type StageProps = {
   headline?: string;
   checkmark?: string[];
   icons?: any[];
+  imgStageSrc?: string;
 };
 
 const Stage = (props: StageProps) => {
@@ -38,9 +39,15 @@ const Stage = (props: StageProps) => {
           <div className="px-24 mb-8 md:my-0 w-full md:w-1/2 lg:w-5/12 relative overflow-y-clip md:mt-[-50px]">
             <img
               className="scale-75 md:scale-75 lg:scale-100 xl:scale-100"
-              src="./img/patelot.png"
-              alt="patelot.de"
+              src={props?.imgStageSrc}
+              alt="patelot stage"
             />
+            {/* <Image
+              src={KamdemImage}
+              alt="patelot.de"
+              width={340}
+              height={340}
+            /> */}
           </div>
         </div>
       </div>

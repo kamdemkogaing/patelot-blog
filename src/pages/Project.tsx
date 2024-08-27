@@ -11,6 +11,7 @@ import PasswordGenerator from "../components/password-genarator/PasswordGenerato
 import Stage from "../components/stage/Stage";
 import WorldMap from "../components/world-map/WorldMap";
 import Countries from "./Countries";
+import KamdemStage from "/img/patelot.png";
 
 const Project = () => {
   const itOffers: string[] = [
@@ -35,6 +36,7 @@ const Project = () => {
         headline="Die Projekte, wo ich beteiligt war"
         checkmark={itOffers}
         icons={icons}
+        imgStageSrc={KamdemStage}
       />
       <Countries />
       <PasswordGenerator />

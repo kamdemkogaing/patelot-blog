@@ -9,6 +9,7 @@ import Page from "../assets/helpers/Page";
 import PatelotCards from "../components/need-grid/PatelotCards";
 import Psa from "../components/psa/Psa";
 import Stage from "../components/stage/Stage";
+import KamdemStage from "/img/patelot.png";
 
 const Home = () => {
   // state
@@ -39,6 +40,7 @@ const Home = () => {
         headline="Eine Website mit modernen Technologien bauen"
         checkmark={itOffers}
         icons={icons}
+        imgStageSrc={KamdemStage}
       />
       <PatelotCards />
     </Page>

@@ -1,11 +1,32 @@
 {
   "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 },
-    { "id": "3", "title": "another title", "views": 200 },
-    { "id": "4", "title": "urgence de penser", "views": 200 },
-    { "id": "5", "title": "droit constitutionel", "views": 1000 },
-    { "id": "6", "title": "mamadou et bineta", "views": 456 },
-    { "id": "7", "title": "amour et passion", "views": 4587 }
+    {
+      "id": 1,
+      "title": "A Title",
+      "body": "Content of my post.",
+      "author": "Patrick",
+      "date": "12/08/2024"
+    },
+    {
+      "id": 2,
+      "title": "Another Unique Title",
+      "body": "Content of another post.",
+      "author": "Ludovic",
+      "date": "20/08/2024"
+    },
+    {
+      "id": 3,
+      "title": "Yet Another Title",
+      "body": "Different content here.",
+      "author": "Maxime",
+      "date": "22/08/2024"
+    },
+    {
+      "id": 4,
+      "title": "Yet Another Title Jungle",
+      "body": "Different content here and before.",
+      "author": "Maxime",
+      "date": "25/08/2024"
+    }
   ]
 }

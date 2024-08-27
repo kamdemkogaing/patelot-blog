@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { FaTaxi } from "react-icons/fa";
 import Page from "../assets/helpers/Page";
-import CreatePost from "../components/blog/CreatePost";
 import PostList from "../components/blog/PostList";
 import Stage from "../components/stage/Stage";
+import KamdemStage from "/img/patelot.png";
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
-
+  // state
+  const icons = [<FaTaxi />, <FaTaxi />, <FaTaxi />, <FaTaxi />, <FaTaxi />];
   const itOffers: string[] = [
     "Paris, Frankreich: Eiffelturm, Louvre und romantische Atmosphäre.",
     "New York City, USA: Times Square, Central Park und kulturelle Vielfalt.",
@@ -15,11 +15,46 @@ const Blog = () => {
     "Athen, Griechenland: Akropolis und antike Ruinen.",
     "Madagaskar: Einzigartige Tierwelt und vielfältige Landschaften.",
   ];
+  const [posts, setPosts] = useState([
+    {
+      id: 1,
+      title: "A Title",
+      description: "Content of my post.",
+      author: "Patrick",
+      date: "12/08/2024",
+    },
+    {
+      id: 2,
+      title: "Another Unique Title",
+      description: "Content of another post.",
+      author: "Ludovic",
+      date: "20/08/2024",
+    },
+    {
+      id: 3,
+      title: "Yet Another Title",
+      description: "Different content here.",
+      author: "Maxime",
+      date: "22/08/2024",
+    },
+    {
+      id: 4,
+      title: "Yet Another Title Jungle",
+      description: "Different content here and before.",
+      author: "Maxime",
+      date: "25/08/2024",
+    },
+  ]);
 
-  const icons = [<FaTaxi />, <FaTaxi />, <FaTaxi />, <FaTaxi />, <FaTaxi />];
+  // comportement
+  const handleDelete = (id) => {
+    // une copie du state
+    const newArrayPosts = [...posts];
 
-  const addPost = (post) => {
-    setPosts([...posts, { ...post, id: posts.length + 1 }]);
+    // manipuler le state
+    const newPosts = newArrayPosts.filter((post) => post.id !== id);
+    // modifier le state
+    setPosts(newPosts);
   };
 
   return (
@@ -29,14 +64,16 @@ const Blog = () => {
         headline="Meine Reiseziele weltweit"
         checkmark={itOffers}
         icons={icons}
+        imgStageSrc={KamdemStage}
       />
-      <div className="container mx-auto my-10 justify-center items-center lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 lg:gap-2 md:gap-2 grid grid-cols-1 gap-10">
-        <div className="bg-[olive] rounded-xl m-2">
-          <CreatePost addPost={addPost} />
-          <PostList posts={posts} />
-        </div>
-        <div className="scale-75">
-          <img src="./img/pk_logo_transparent.png" alt="" />
+
+      <div className="bg-black">
+        <div className="container p-4 mx-auto justify-center items-center">
+          <PostList
+            blogs={posts}
+            title="Liste des blogs"
+            onClick={handleDelete}
+          />
         </div>
       </div>
     </Page>
