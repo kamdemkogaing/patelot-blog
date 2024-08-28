@@ -1,4 +1,4 @@
-const PostList = ({ blogs, title, onClick, ...rest }) => {
+const PostList = ({ blogs, title, ...rest }) => {
   // state
 
   //comportement
@@ -6,50 +6,30 @@ const PostList = ({ blogs, title, onClick, ...rest }) => {
   // render
   return (
     <div className="bloglist text-white text-center" {...rest}>
-      <div className="font-bold text-2xl">{title}</div>
-      {blogs.map((post) => {
-        return (
-          <div
-            className="blog my-8 hover:shadow-xl hover:p-4 hover:bg-[olive] hover:rounded-xl text-left p-4"
-            key={post.id}
-          >
-            <a
-              href=""
-              className="blog-title font-extrabold text-xl link link-hover"
+      <div className="font-bold text-2xl underline decoration-4">{title}</div>
+      <div className="grid md:grid-cols-2 md:gap-2 xl:grid-cols-4 xl:gap-4">
+        {blogs.map((post) => {
+          return (
+            <div
+              className="blog hover:shadow-xl hover:p-4 hover:bg-[olive] hover:rounded-xl text-left my-8 p-4"
+              key={post.id}
             >
-              {post.title}
-            </a>
-            <div className="mt-8">
-              <p className="blog-publication-date italic text-sm">
-                {post.date}
-              </p>
-              <p className="blog-author italic font-extrabold">
-                Publié par : {post.author}
-              </p>
-            </div>
-
-            <button
-              className="btn btn-square btn-outline mt-4 bg-white hover:bg-slate-500"
-              onClick={() => onClick(post.id)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              <a
+                href=""
+                className="blog-title font-extrabold text-xl link link-hover"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-        );
-      })}
+                {post.title}
+              </a>
+              <div className="blog-publication-date italic text-sm mt-12">
+                {post.date}
+              </div>
+              <div className="blog-author italic">
+                Veröffentlicht von : {post.author}
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

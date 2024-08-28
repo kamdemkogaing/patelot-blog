@@ -2,30 +2,30 @@
   "posts": [
     {
       "id": 1,
-      "title": "A Title",
+      "title": "Meine Reise nach Kamerun",
       "body": "Content of my post.",
       "author": "Patrick",
       "date": "12/08/2024"
     },
     {
       "id": 2,
-      "title": "Another Unique Title",
+      "title": "Meine Reise nach Kroatien",
       "body": "Content of another post.",
       "author": "Ludovic",
       "date": "20/08/2024"
     },
     {
       "id": 3,
-      "title": "Yet Another Title",
+      "title": "Meine Reise in die USA",
       "body": "Different content here.",
       "author": "Maxime",
       "date": "22/08/2024"
     },
     {
       "id": 4,
-      "title": "Yet Another Title Jungle",
+      "title": "Meine Reise nach Italien",
       "body": "Different content here and before.",
-      "author": "Maxime",
+      "author": "Jérome",
       "date": "25/08/2024"
     }
   ]

@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 const useDataCountriesSelection = (url) => {
   // state
   const [data, setData] = useState(null);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   // effect
   useEffect(() => {
     // Reset loading and error states before starting the fetch
-    setLoading(true);
+    setIsLoading(true);
     setError(null);
 
     fetch(url)
@@ -23,13 +23,13 @@ const useDataCountriesSelection = (url) => {
       })
       .then((data) => {
         setData(data);
-        setLoading(false);
+        setIsLoading(false);
       })
       .catch((error) => {
         setError(
           "There was a problem with the fetch operation: " + error.message
         );
-        setLoading(false);
+        setIsLoading(false);
       });
   }, [url]);
 

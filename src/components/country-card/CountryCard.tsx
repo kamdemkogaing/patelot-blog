@@ -6,10 +6,18 @@ const CountryCard = ({ country }) => {
         src={country.flags.svg}
         alt={country.translations.deu.common}
       />
-      <div className="p-4 rounded-lg absolute bg-[#f4f4f4] hidden lg:block md:block xl:block">
-        <div className="break-all">Land: {country.translations.deu.common}</div>
-        <div>Haupstadt: {country.capital}</div>
-        <div>Bewölkerung: {country.population.toLocaleString()}</div>
+      <div className="p-2 rounded-lg absolute bg-[#f4f4f4] hidden lg:block md:block xl:block">
+        <div className="break-all">
+          <span className="font-bold">Land:</span>{" "}
+          {country.translations.deu.common}
+        </div>
+        <div>
+          <span className="font-bold">Haupstadt:</span> {country.capital}
+        </div>
+        <div>
+          <span className="font-bold">Bewölkerung:</span>{" "}
+          {country.population.toLocaleString()}
+        </div>
       </div>
     </div>
   );
