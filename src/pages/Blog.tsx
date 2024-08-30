@@ -1,10 +1,10 @@
 import classNames from "classnames";
 import { FaTaxi } from "react-icons/fa";
 import Page from "../assets/helpers/Page";
-import PostList from "../components/blog/PostList";
+import BlogList from "../components/blog/BlogList";
 import IsLoading from "../components/is-loading/IsLoading";
 import Stage from "../components/stage/Stage";
-import useDataPostList from "../hooks/useDataPostList";
+import useDataPostList from "../hooks/useDataBlogList";
 import KamdemStage from "/img/patelot.png";
 
 const Blog = () => {
@@ -18,7 +18,7 @@ const Blog = () => {
     "Madagaskar: Einzigartige Tierwelt und vielfältige Landschaften.",
   ];
   const { data, isLoading, error } = useDataPostList(
-    "http://localhost:8000/posts"
+    "http://localhost:8000/blogs"
   );
 
   // comportement
@@ -42,7 +42,7 @@ const Blog = () => {
           {isLoading ? (
             <IsLoading />
           ) : (
-            <PostList blogs={data} title="Blogliste" />
+            <BlogList blogs={data} title="Blogliste" />
           )}
         </div>
       </div>

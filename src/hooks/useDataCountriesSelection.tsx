@@ -8,11 +8,13 @@ const useDataCountriesSelection = (url) => {
 
   // effect
   useEffect(() => {
+    const abortController = new AbortController();
+
     // Reset loading and error states before starting the fetch
     setIsLoading(true);
     setError(null);
 
-    fetch(url)
+    fetch(url, { signal: abortController.signal })
       .then((response) => {
         if (!response.ok) {
           throw new Error(
@@ -26,11 +28,20 @@ const useDataCountriesSelection = (url) => {
         setIsLoading(false);
       })
       .catch((error) => {
-        setError(
-          "There was a problem with the fetch operation: " + error.message
-        );
-        setIsLoading(false);
+        if (error.name === "AbortError") {
+          console.log(
+            "here was a problem with the fetch operation: ",
+            error.message
+          );
+        } else {
+          setError(
+            "There was a problem with the fetch operation: " + error.message
+          );
+          setIsLoading(false);
+        }
       });
+
+    return () => abortController.abort();
   }, [url]);
 
   return { data, isLoading, error };

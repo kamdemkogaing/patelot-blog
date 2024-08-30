@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "blogs": [
     {
       "id": 1,
       "title": "Meine Reise nach Kamerun",
@@ -27,6 +27,13 @@
       "body": "Different content here and before.",
       "author": "Jérome",
       "date": "25/08/2024"
+    },
+    {
+      "id": 5,
+      "title": "Meine Reise nach Österreich",
+      "body": "Different content here and before.",
+      "author": "Binja",
+      "date": "02/09/2024"
     }
   ]
 }
