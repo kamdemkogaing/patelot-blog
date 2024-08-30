@@ -16,7 +16,7 @@ const HamburgerMenu = () => {
       <nav className="bg-white shadow-md p-4 flex flex-wrap justify-between items-center">
         <div className="text-xl font-bold">
           <img
-            src="./img/pk_logo_transparent.png"
+            src="/img/pk_logo_transparent.png"
             alt="logo_pk"
             width={50}
             height={50}
