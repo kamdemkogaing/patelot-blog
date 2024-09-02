@@ -1,9 +1,12 @@
 import { useParams } from "react-router";
+import { useNavigate } from "react-router-dom";
 import Page from "../../assets/helpers/Page";
 import useDataBlogList from "../../hooks/useDataBlogList";
 import IsLoading from "../is-loading/IsLoading";
 
 const BlogDetail = () => {
+  const history = useNavigate();
+
   const { id } = useParams();
 
   const {
@@ -11,6 +14,15 @@ const BlogDetail = () => {
     isLoading,
     error,
   } = useDataBlogList("http://localhost:8000/blogs/" + id);
+
+  const handleDelete = () => {
+    fetch("http://localhost:8000/blogs/" + id, { method: "DELETE" }).then(
+      () => {
+        history("/blog");
+        console.log("Der Blogartikel wurde erfolgreich entfernt!");
+      }
+    );
+  };
 
   return (
     <Page>
@@ -32,6 +44,25 @@ const BlogDetail = () => {
                 {blog.author}
               </small>
             </div>
+            <button
+              onClick={handleDelete}
+              className="btn btn-square btn-outline bg-white hover:bg-black mt-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         )}
       </div>

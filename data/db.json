@@ -1,39 +1,81 @@
 {
   "blogs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Meine Reise nach Kamerun",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat itaque pariatur qui perferendis voluptatem, nemo nobis amet repudiandae. Laborum eum tenetur, omnis nisi dolor est temporibus nam repellendus nobis rerum! Labore explicabo minus facilis assumenda, magnam pariatur amet, optio, voluptatibus earum sapiente itaque voluptas officiis deleniti. Doloremque eaque harum est, impedit quis voluptates officia tenetur. Temporibus, possimus recusandae natus doloribus praesentium ad quaerat ab adipisci rerum nulla eius dolore earum voluptate sit officia repudiandae eveniet saepe reprehenderit. Exercitationem voluptatibus dolores quae reiciendis, saepe illum? Voluptate fuga, quis quam doloremque esse, amet delectus nemo vel deserunt sit libero voluptates corrupti.",
+      "body": "Meine Reise nach Kamerun war eine eindrucksvolle und bereichernde Erfahrung. Das Land begeistert durch seine unglaubliche landschaftliche Vielfalt, von den tropischen Regenwäldern im Süden bis hin zu den Savannen im Norden. Besonders beeindruckend war mein Besuch am Mount Cameroon, dem höchsten Berg Westafrikas, den ich teilweise erklommen habe. In den Städten wie Douala und Yaoundé konnte ich die pulsierende Kultur und das bunte Markttreiben erleben. Die Menschen, die ich traf, waren unglaublich freundlich und offen, was mir tiefe Einblicke in die kamerunische Lebensweise und Traditionen ermöglichte. Es war eine Reise voller Abenteuer und kultureller Entdeckungen, die mir Kamerun von seiner schönsten Seite zeigte.",
       "author": "Patrick",
       "date": "12/08/2024"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Meine Reise nach Kroatien",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat itaque pariatur qui perferendis voluptatem, nemo nobis amet repudiandae. Laborum eum tenetur, omnis nisi dolor est temporibus nam repellendus nobis rerum! Labore explicabo minus facilis assumenda, magnam pariatur amet, optio, voluptatibus earum sapiente itaque voluptas officiis deleniti. Doloremque eaque harum est, impedit quis voluptates officia tenetur. Temporibus, possimus recusandae natus doloribus praesentium ad quaerat ab adipisci rerum nulla eius dolore earum voluptate sit officia repudiandae eveniet saepe reprehenderit. Exercitationem voluptatibus dolores quae reiciendis, saepe illum? Voluptate fuga, quis quam doloremque esse, amet delectus nemo vel deserunt sit libero voluptates corrupti.",
+      "body": "Meine Reise nach Kroatien war eine wunderschöne Erfahrung. Das Land besticht durch seine malerische Küste mit glasklarem, türkisfarbenem Wasser und charmanten Städten wie Dubrovnik und Split. Besonders beeindruckend war mein Besuch der Plitvicer Seen, wo ich die spektakulären Wasserfälle und die unberührte Natur bewundern konnte. Die Altstadt von Dubrovnik, mit ihren historischen Mauern und engen Gassen, versetzte mich in eine andere Zeit. Auch die kroatische Küche, mit frischen Meeresfrüchten und mediterranen Spezialitäten, hat mich begeistert. Insgesamt war es eine Reise voller Entspannung, Entdeckungen und unvergesslicher Eindrücke.",
       "author": "Ludovic",
       "date": "20/08/2024"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Meine Reise in die USA",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat itaque pariatur qui perferendis voluptatem, nemo nobis amet repudiandae. Laborum eum tenetur, omnis nisi dolor est temporibus nam repellendus nobis rerum! Labore explicabo minus facilis assumenda, magnam pariatur amet, optio, voluptatibus earum sapiente itaque voluptas officiis deleniti. Doloremque eaque harum est, impedit quis voluptates officia tenetur. Temporibus, possimus recusandae natus doloribus praesentium ad quaerat ab adipisci rerum nulla eius dolore earum voluptate sit officia repudiandae eveniet saepe reprehenderit. Exercitationem voluptatibus dolores quae reiciendis, saepe illum? Voluptate fuga, quis quam doloremque esse, amet delectus nemo vel deserunt sit libero voluptates corrupti.",
+      "body": "Meine Reise in die USA war ein unvergessliches Abenteuer. Von den pulsierenden Straßen New Yorks bis zu den beeindruckenden Weiten des Grand Canyon habe ich die unglaubliche Vielfalt des Landes erlebt. In New York faszinierte mich die Energie der Stadt, mit ihren ikonischen Wahrzeichen wie dem Times Square und der Freiheitsstatue. Anschließend führte mich meine Reise an die Westküste, wo ich in Los Angeles die entspannten Strände von Santa Monica besuchte und in San Francisco über die berühmte Golden Gate Bridge spazierte. Jeder Ort hatte seinen eigenen Charakter und bot einzigartige Erlebnisse, von lebendigen Metropolen bis hin zu atemberaubenden Naturlandschaften. Es war eine Reise voller Kontraste und inspirierender Momente",
       "author": "Maxime",
       "date": "22/08/2024"
     },
     {
-      "id": 4,
-      "title": "Meine Reise nach Italien",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat itaque pariatur qui perferendis voluptatem, nemo nobis amet repudiandae. Laborum eum tenetur, omnis nisi dolor est temporibus nam repellendus nobis rerum! Labore explicabo minus facilis assumenda, magnam pariatur amet, optio, voluptatibus earum sapiente itaque voluptas officiis deleniti. Doloremque eaque harum est, impedit quis voluptates officia tenetur. Temporibus, possimus recusandae natus doloribus praesentium ad quaerat ab adipisci rerum nulla eius dolore earum voluptate sit officia repudiandae eveniet saepe reprehenderit. Exercitationem voluptatibus dolores quae reiciendis, saepe illum? Voluptate fuga, quis quam doloremque esse, amet delectus nemo vel deserunt sit libero voluptates corrupti.",
-      "author": "Jérome",
-      "date": "25/08/2024"
-    },
-    {
-      "id": 5,
+      "id": "5",
       "title": "Meine Reise nach Österreich",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat itaque pariatur qui perferendis voluptatem, nemo nobis amet repudiandae. Laborum eum tenetur, omnis nisi dolor est temporibus nam repellendus nobis rerum! Labore explicabo minus facilis assumenda, magnam pariatur amet, optio, voluptatibus earum sapiente itaque voluptas officiis deleniti. Doloremque eaque harum est, impedit quis voluptates officia tenetur. Temporibus, possimus recusandae natus doloribus praesentium ad quaerat ab adipisci rerum nulla eius dolore earum voluptate sit officia repudiandae eveniet saepe reprehenderit. Exercitationem voluptatibus dolores quae reiciendis, saepe illum? Voluptate fuga, quis quam doloremque esse, amet delectus nemo vel deserunt sit libero voluptates corrupti.",
+      "body": "Meine Reise nach Österreich war eine wunderbare Mischung aus Naturerlebnissen und kulturellen Entdeckungen. In Wien begeisterte mich die kaiserliche Architektur, besonders das Schloss Schönbrunn und die Wiener Hofburg. Die Kaffeehauskultur der Stadt war ein Genuss, und ich ließ es mir nicht nehmen, eine Sachertorte zu probieren. In Salzburg, der Geburtsstadt Mozarts, konnte ich durch die charmante Altstadt schlendern und die beeindruckende Festung Hohensalzburg besichtigen. Die Alpen boten atemberaubende Landschaften, und ich genoss Wanderungen mit Blick auf majestätische Berge und kristallklare Seen. Auch die traditionelle österreichische Küche, mit Gerichten wie Wiener Schnitzel und Kaiserschmarrn, war ein Highlight. Insgesamt war es eine Reise voller kultureller Schätze und malerischer Natur.",
       "author": "Binja",
       "date": "02/09/2024"
+    },
+    {
+      "id": "20cd",
+      "title": "Meine Reise nach Kanada",
+      "author": "Maliya",
+      "body": "Im Sommer habe ich eine unvergessliche Reise nach Kanada unternommen. Die atemberaubende Natur mit endlosen Wäldern, kristallklaren Seen und imposanten Bergen hat mich sofort in ihren Bann gezogen. Besonders beeindruckend war mein Besuch in den Rocky Mountains, wo ich Wanderungen durch spektakuläre Landschaften unternommen habe. In Vancouver habe ich die multikulturelle Atmosphäre der Stadt genossen und in Toronto das lebendige Stadtleben erlebt. Die Freundlichkeit der Kanadier hat die Reise zusätzlich bereichert. Insgesamt war es eine Reise voller Abenteuer, Erholung und unvergesslicher Erlebnisse",
+      "date": "2024-09-02 10:20:09.794Z"
+    },
+    {
+      "id": "d700",
+      "title": "Meine Reise in den Kongo",
+      "author": "Luca",
+      "body": "Meine Reise in den Kongo war eine faszinierende und eindrucksvolle Erfahrung. Das Land beeindruckte mich durch seine üppige, dichte Regenwaldlandschaft und die reiche Artenvielfalt. Ich hatte die Gelegenheit, das Virunga-Nationalpark zu besuchen, wo ich Berggorillas in ihrem natürlichen Lebensraum beobachten konnte – ein unvergessliches Erlebnis. Auch die Begegnungen mit den Menschen vor Ort, ihre Herzlichkeit und die lebendige Kultur hinterließen einen bleibenden Eindruck. Trotz der Herausforderungen, die das Reisen in dieser Region mit sich brachte, war es eine Reise, die mir tiefe Einblicke in ein einzigartiges und oft übersehenes Land ermöglichte.",
+      "date": "2024-09-02 10:23:48.728Z"
+    },
+    {
+      "id": "1295",
+      "title": "Meine Reise nach Ägypten",
+      "author": "James",
+      "body": "Meine Reise nach Ägypten war ein faszinierendes Abenteuer voller historischer Entdeckungen und kultureller Eindrücke. Der Besuch der Pyramiden von Gizeh und der Sphinx war ein absolutes Highlight – es war beeindruckend, diese weltberühmten Monumente aus nächster Nähe zu sehen. Auch das Ägyptische Museum in Kairo, mit seiner beeindruckenden Sammlung antiker Schätze, darunter die Masken des Tutanchamun, war äußerst eindrucksvoll. In Luxor konnte ich durch die prächtigen Tempel von Karnak und das Tal der Könige wandern, wo ich die beeindruckenden Grabkammern bestaunen konnte. Die Kreuzfahrt auf dem Nil bot mir eine entspannte Möglichkeit, weitere archäologische Stätten und malerische Landschaften zu entdecken. Zudem genoss ich die warme Gastfreundschaft und die köstliche ägyptische Küche. Insgesamt war es eine Reise voller historischer Wunder und unvergesslicher Erlebnisse.",
+      "date": "2024-09-02 11:00:30.063Z"
+    },
+    {
+      "id": "6dcd",
+      "title": "Meine Reise nach Thailand",
+      "author": "Patrick",
+      "body": "Meine Reise nach Thailand war eine faszinierende und bereichernde Erfahrung. Bangkok, die pulsierende Hauptstadt, begeisterte mich mit ihren lebhaften Märkten, beeindruckenden Tempeln wie dem Wat Arun und dem Wat Phra Kaew, und dem köstlichen Streetfood, das ich auf den Straßen genießen konnte. Ein Highlight war der Besuch der historischen Stadt Ayutthaya, wo ich durch die beeindruckenden Ruinen der alten Tempelanlagen schlenderte. In Chiang Mai erlebte ich die kulturelle Vielfalt Thailands bei einem Besuch der zahlreichen Tempel und bei einem traditionellen Thai-Kochkurs. Die Strände im Süden, insbesondere auf Phuket und Koh Samui, boten mir atemberaubende Landschaften, kristallklares Wasser und entspannende Stunden am Meer. Auch die Gastfreundschaft und Herzlichkeit der Thais machten meine Reise zu etwas ganz Besonderem. Insgesamt war es eine Reise voller Abenteuer, kultureller Entdeckungen und entspannender Momente.",
+      "date": "2024-09-02 11:06:34.202Z"
+    },
+    {
+      "id": "2ee5",
+      "title": "Meine Reise nach Südafrika",
+      "author": "Binja",
+      "body": "Südafrika ist ein Land der Kontraste und ein absolutes Traumziel für jeden Reisenden. Von der pulsierenden Metropole Kapstadt, die mit ihrem atemberaubenden Tafelberg beeindruckt, bis hin zu den endlosen Savannen des Kruger-Nationalparks, wo ich die Big Five in freier Wildbahn erleben durfte – diese Reise hat mich in vielerlei Hinsicht überwältigt.\n\nBesonders beeindruckt hat mich die Vielfalt der Kulturen und die herzliche Gastfreundschaft der Menschen. In den Townships von Soweto habe ich viel über die Geschichte und den Geist des südafrikanischen Volkes gelernt. Die Kombination aus geschichtlicher Tiefe und natürlicher Schönheit hat meine Sicht auf das Leben erweitert.\n\nAuch die südafrikanische Küche war ein Highlight meiner Reise. Ob ein traditionelles Braai (Barbecue) oder die einzigartigen Aromen eines Bobotie – die kulinarischen Erlebnisse waren so vielfältig wie das Land selbst.\n\nInsgesamt war meine Reise nach Südafrika ein unvergessliches Abenteuer, das mich nachhaltig inspiriert hat. Ich kann es kaum erwarten, eines Tages zurückzukehren und noch mehr von diesem faszinierenden Land zu entdecken.",
+      "date": "2024-09-02 13:48:54.731Z"
+    },
+    {
+      "id": "31da",
+      "title": "Meine Reise nach Berlin",
+      "author": "Ludovic",
+      "body": "Berlin ist eine Stadt, die mich sofort in ihren Bann gezogen hat. Schon beim Aussteigen aus dem Zug spürt man die pulsierende Energie dieser Metropole. Mein erster Stopp war das Brandenburger Tor, ein Symbol der deutschen Geschichte und Wiedervereinigung. Es ist beeindruckend, vor diesem monumentalen Bauwerk zu stehen, das so viel gesehen hat.\n\nDanach ging es weiter zum Reichstag, wo ich die Glaskuppel besichtigt habe. Der Ausblick über die Stadt war atemberaubend, und ich konnte die Mischung aus historischer Architektur und moderner Skyline bewundern.\n\nNatürlich durfte auch ein Besuch auf der Museumsinsel nicht fehlen. Besonders das Pergamonmuseum hat mich fasziniert. Die Sammlung antiker Kunstwerke ist überwältigend und hat mich tief beeindruckt.\n\nEin weiteres Highlight war der Spaziergang entlang der East Side Gallery. Die bemalten Überreste der Berliner Mauer erzählen Geschichten von Freiheit und Veränderung. Die Kunstwerke sind kraftvoll und regen zum Nachdenken an.\n\nZum Abschluss meines Tages habe ich in einem kleinen Café in Kreuzberg gesessen und die lebhafte Atmosphäre auf mich wirken lassen. Berlin ist eine Stadt, die sich ständig neu erfindet und gleichzeitig ihre Wurzeln bewahrt. Diese Kombination aus Geschichte und Moderne macht sie für mich so einzigartig und unvergesslich. Ich freue mich schon auf meinen nächsten Besuch!",
+      "date": "2024-09-02 17:10:26.798Z"
+    },
+    {
+      "id": "88f6",
+      "title": "Meine Reise nach Paris",
+      "author": "Patrick",
+      "body": "Paris, die Stadt der Lichter, hat mich mit ihrem unvergleichlichen Charme verzaubert. Gleich nach meiner Ankunft führte mich mein Weg direkt zum Eiffelturm. Bei strahlendem Sonnenschein glänzte das Wahrzeichen der Stadt in seiner ganzen Pracht. Die Aussicht von der obersten Plattform war einfach atemberaubend – die ganze Stadt lag mir zu Füßen, von den eleganten Boulevards bis hin zur Seine, die sich wie ein silbernes Band durch die Stadt schlängelt.\n\nAnschließend erkundete ich das Künstlerviertel Montmartre. Die engen, gepflasterten Gassen und die malerischen Häuser gaben mir das Gefühl, in eine andere Zeit versetzt zu werden. Die Basilika Sacré-Cœur thront majestätisch über dem Viertel, und von den Stufen der Kirche aus hatte ich einen herrlichen Blick über Paris.\n\nNatürlich durfte ein Besuch im Louvre nicht fehlen. Die gläserne Pyramide am Eingang ist ein faszinierender Kontrast zu dem historischen Gebäude dahinter. Im Inneren des Museums habe ich die Mona Lisa und viele weitere Meisterwerke bestaunt. Es war ein unvergessliches Erlebnis, vor diesen weltberühmten Kunstwerken zu stehen.\n\nEin weiteres Highlight meiner Reise war ein Spaziergang entlang der Champs-Élysées bis hin zum Arc de Triomphe. Die prächtigen Geschäfte, Cafés und die Lebendigkeit dieser berühmten Straße haben mich in ihren Bann gezogen. Der Arc de Triomphe selbst ist ein monumentales Zeugnis der französischen Geschichte und ein Ort, der zum Innehalten einlädt.\n\nZum Abschluss eines perfekten Tages ließ ich mich in einem kleinen Bistro an der Seine nieder, um bei einem Glas Wein und einem köstlichen Abendessen den Blick auf die beleuchtete Stadt zu genießen. Paris bei Nacht ist einfach magisch – die beleuchteten Brücken, die funkelnden Lichter und die besondere Atmosphäre machten diesen Moment unvergesslich.\n\nParis hat mein Herz im Sturm erobert, und ich weiß, dass es nicht mein letzter Besuch in dieser zauberhaften Stadt sein wird.",
+      "date": "2024-09-02 17:25:19.291Z"
     }
   ]
 }

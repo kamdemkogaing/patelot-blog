@@ -50,9 +50,9 @@ const Psa = () => {
           Patelot.de
         </div>
         <div className="p-[1rem] text-white">
-          <div className="text-lg mb-4">Patrick Kamdem</div>
+          <div className="text-lg mb-4 font-bold">Patrick Kamdem</div>
           <div className="text-sm leading-[1.125rem] mb-4">
-            Ich helfe Ihnen gerne
+            Ich helfe Dir gerne
           </div>
         </div>
         <div className="py-0">

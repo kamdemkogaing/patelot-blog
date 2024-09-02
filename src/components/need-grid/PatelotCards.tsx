@@ -17,14 +17,6 @@ const PatelotCards = () => {
           "justify-between bg-zinc-100 shadow-lg p-8 border border-zinc-300 rounded-2xl flex flex-col gap-4 place-items-stretch"
         }
       >
-        {/* <div className={"bottom-4 left-4"}>
-    <span className="sm:hidden">XS</span>
-    <span className="hidden sm:block md:hidden">XS</span>
-    <span className="hidden md:block lg:hidden">MD</span>
-    <span className="hidden lg:block xl:hidden">LG</span>
-    <span className="hidden xl:block">XL</span>
-  </div> */}
-
         <h2 className={"text-3xl font-bold mb-4"}>Über mich</h2>
         <p className={"text-[olive]"}>
           Mein Name ist Patrick Kamdem, und ich bin ein engagierter
@@ -38,18 +30,12 @@ const PatelotCards = () => {
           Online-Shops.
         </p>
         <div>
-          {/* <button
+          <button
             className={
-              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
+              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:border-[oliver] hover:bg-black"
             }
           >
-            Mehr erfahren ...
-          </button> */}
-          <button
-            disabled
-            className="bg-slate-400  px-4 py-2 rounded-md text-black"
-          >
-            Mehr erfahren ...
+            <Link to="/home">Mehr erfahren...</Link>
           </button>
         </div>
       </div>
@@ -112,18 +98,8 @@ const PatelotCards = () => {
           </li>
         </ul>
         <div>
-          {/* <button
-            className={
-              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
-            }
-          >
-            Mehr erfahren ...
-          </button> */}
-          <button
-            disabled
-            className="bg-slate-400  px-4 py-2 rounded-md text-black"
-          >
-            Mehr erfahren ...
+          <button className="rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:border-[oliver] hover:bg-black">
+            <Link to={"/projekte"}> Mehr erfahren...</Link>
           </button>
         </div>
       </div>
@@ -139,18 +115,8 @@ const PatelotCards = () => {
           Webentwicklung, neuen Technologien und Best Practices.
         </p>
         <div>
-          {/* <button
-            className={
-              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
-            }
-          >
-            Mehr erfahren ...
-          </button> */}
-          <button
-            disabled
-            className="bg-slate-400  px-4 py-2 rounded-md text-black"
-          >
-            Mehr erfahren ...
+          <button className="rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-black">
+            <Link to={"/blog"}> Mehr erfahren...</Link>
           </button>
         </div>
       </div>
@@ -184,7 +150,7 @@ const PatelotCards = () => {
         <div>
           <button
             className={
-              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
+              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:border-[oliver] hover:bg-black"
             }
           >
             <a href="mailto:patrick-kamdem@patelot.de">Mich kontaktieren</a>
@@ -208,7 +174,7 @@ const PatelotCards = () => {
         <div>
           <button
             className={
-              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
+              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:border-[oliver] hover:bg-black"
             }
           >
             <a href="https://de.wikipedia.org/wiki/Kamerun" target="_blank">
@@ -239,18 +205,8 @@ const PatelotCards = () => {
           <li className="font-bold">Essen</li>
         </ul>
         <div>
-          {/* <button
-            className={
-              "rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-white hover:text-[olive] hover:border-4 hover:border-[oliver]"
-            }
-          >
-            Mehr erfahren ...
-          </button> */}
-          <button
-            disabled
-            className="bg-slate-400  px-4 py-2 rounded-md text-black"
-          >
-            Mehr erfahren ...
+          <button className="rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-black">
+            <Link to={"/hobbys"}> Mehr erfahren...</Link>
           </button>
         </div>
       </div>
@@ -259,3 +215,13 @@ const PatelotCards = () => {
 };
 
 export default PatelotCards;
+
+{
+  /* <div className={"bottom-4 left-4"}>
+    <span className="sm:hidden">XS</span>
+    <span className="hidden sm:block md:hidden">XS</span>
+    <span className="hidden md:block lg:hidden">MD</span>
+    <span className="hidden lg:block xl:hidden">LG</span>
+    <span className="hidden xl:block">XL</span>
+  </div> */
+}

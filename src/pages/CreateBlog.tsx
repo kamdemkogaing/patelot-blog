@@ -1,24 +1,43 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Page from "../assets/helpers/Page";
 
 const CreateBlog = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    option: "",
-    message: "",
+    title: "",
+    author: "",
+    body: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData({
       ...formData,
       [name]: value,
     });
   };
 
+  const history = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+
+    const tmp_date = new Date().toISOString().split("T");
+    const date = `${tmp_date[0]} ${tmp_date[1]}`;
+    const blog = { ...formData, date };
+    setIsLoading(true);
+
+    fetch("http://localhost:8000/blogs", {
+      method: "POST",
+      headers: { "content-Type": "application/json" },
+      body: JSON.stringify(blog),
+    }).then(() => {
+      console.log("Der Blog wurde erfolgreich hinzugefügt.");
+      setIsLoading(false);
+      history("/blog");
+    });
   };
 
   return (
@@ -35,12 +54,13 @@ const CreateBlog = () => {
               </label>
               <input
                 type="text"
-                name="name"
+                name="title"
                 id="name"
-                value={formData.name}
+                value={formData.title}
                 onChange={handleChange}
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 placeholder="Titelname"
+                required
               />
             </div>
 
@@ -52,20 +72,21 @@ const CreateBlog = () => {
                 Ein Autor auswählen
               </label>
               <select
-                name="option"
+                name="author"
                 id="option"
-                value={formData.option}
+                value={formData.author}
                 onChange={handleChange}
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                required
               >
                 <option value="">Auswählen</option>
-                <option value="option1">Patrick</option>
-                <option value="option2">Ludovic</option>
-                <option value="option3">Luca</option>
-                <option value="option4">Elyas</option>
-                <option value="option5">Binja</option>
-                <option value="option6">James</option>
-                <option value="option7">Maliya</option>
+                <option value="Patrick">Patrick</option>
+                <option value="Ludovic">Ludovic</option>
+                <option value="Luca">Luca</option>
+                <option value="Elyas">Elyas</option>
+                <option value="Binja">Binja</option>
+                <option value="James">James</option>
+                <option value="Maliya">Maliya</option>
               </select>
             </div>
 
@@ -77,23 +98,34 @@ const CreateBlog = () => {
                 Blog Artikel schreiben
               </label>
               <textarea
-                name="message"
+                name="body"
                 id="message"
-                value={formData.message}
+                value={formData.body}
                 onChange={handleChange}
-                rows={4}
-                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                rows={10}
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm resize-none"
                 placeholder="Blog Artikel schreiben"
+                required
               ></textarea>
             </div>
 
             <div>
-              <button
-                type="submit"
-                className="w-1/3 bg-[black] text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Blog erstellen
-              </button>
+              {!isLoading && (
+                <button
+                  type="submit"
+                  className="md:w-1/3 bg-[black] text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Blog erstellen
+                </button>
+              )}
+              {isLoading && (
+                <div>
+                  <span className="loading loading-dots loading-xs"></span>
+                  <span className="loading loading-dots loading-sm"></span>
+                  <span className="loading loading-dots loading-md"></span>
+                  <span className="loading loading-dots loading-lg"></span>
+                </div>
+              )}
             </div>
           </form>
         </div>
