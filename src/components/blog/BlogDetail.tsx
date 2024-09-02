@@ -15,14 +15,14 @@ const BlogDetail = () => {
     error,
   } = useDataBlogList("http://localhost:8000/blogs/" + id);
 
-  const handleDelete = () => {
+  /* const handleDelete = () => {
     fetch("http://localhost:8000/blogs/" + id, { method: "DELETE" }).then(
       () => {
         history("/blog");
         console.log("Der Blogartikel wurde erfolgreich entfernt!");
       }
     );
-  };
+  }; */
 
   return (
     <Page>
@@ -44,9 +44,9 @@ const BlogDetail = () => {
                 {blog.author}
               </small>
             </div>
-            <button
+            {/* <button
               onClick={handleDelete}
-              className="btn btn-square btn-outline bg-white hover:bg-black mt-4"
+              className="btn btn-square btn-outline bg-white hover:bg-black mt-4 text"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const BlogDetail = () => {
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </button>
+            </button> */}
           </div>
         )}
       </div>
