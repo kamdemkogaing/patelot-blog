@@ -51,3 +51,7 @@ const Blog = () => {
 };
 
 export default Blog;
+
+// local Mock Data: http://localhost:8000/blogs/
+// port: 8000
+// json-server --watch data/db.json --port 8000
