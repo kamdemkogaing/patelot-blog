@@ -13,10 +13,10 @@ const BlogDetail = () => {
     data: blog,
     isLoading,
     error,
-  } = useDataBlogList("http://localhost:8000/blogs/" + id);
+  } = useDataBlogList("https://patelot-mock.onrender.com/blogs/" + id);
 
   /* const handleDelete = () => {
-    fetch("http://localhost:8000/blogs/" + id, { method: "DELETE" }).then(
+    fetch("https://patelot-mock.onrender.com/blogs/" + id, { method: "DELETE" }).then(
       () => {
         history("/blog");
         console.log("Der Blogartikel wurde erfolgreich entfernt!");

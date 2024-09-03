@@ -29,7 +29,7 @@ const CreateBlog = () => {
     const blog = { ...formData, date };
     setIsLoading(true);
 
-    fetch("http://localhost:8000/blogs", {
+    fetch("https://patelot-mock.onrender.com/blogs", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(blog),

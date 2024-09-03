@@ -18,7 +18,7 @@ const Blog = () => {
     "Madagaskar: Einzigartige Tierwelt und vielfältige Landschaften.",
   ];
   const { data, isLoading, error } = useDataPostList(
-    "http://localhost:8000/blogs?_sort=id&_order=desc"
+    "https://patelot-mock.onrender.com/blogs?_sort=id&_order=desc"
   );
 
   // comportement
