@@ -5,10 +5,10 @@ import {
   FaSave,
   FaTelegramPlane,
 } from "react-icons/fa";
-import PatelotModal from "../assets/helpers/Baustelle";
+import Baustelle from "../assets/helpers/Baustelle";
 import Page from "../assets/helpers/Page";
 import Stage from "../components/stage/Stage";
-import KamdemStage from "/img/patelot.png";
+import KamdemStage from "/img/stage_hobby.png";
 
 const Hobbys = () => {
   const itOffers: string[] = [
@@ -37,7 +37,7 @@ const Hobbys = () => {
           icons={icons}
           imgStageSrc={KamdemStage}
         />
-        <PatelotModal />
+        <Baustelle />
       </Page>
     </>
   );

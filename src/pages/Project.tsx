@@ -11,7 +11,7 @@ import PasswordGenerator from "../components/password-genarator/PasswordGenerato
 import Stage from "../components/stage/Stage";
 import WorldMap from "../components/world-map/WorldMap";
 import Countries from "./Countries";
-import KamdemStage from "/img/patelot.png";
+import KamdemStage from "/img/stage_projekt.png";
 
 const Project = () => {
   const itOffers: string[] = [

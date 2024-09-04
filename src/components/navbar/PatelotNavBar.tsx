@@ -39,7 +39,7 @@ const PatelotNavBar = ({
     <>
       <div
         className={classNames(
-          "hidden sm:block md:block sticky top-0",
+          "hidden sm:block md:block sticky top-0 z-50",
           `${scrolled ? "bg-[olive]" : "bg-[#f4f4f4]"}`
         )}
         {...props}

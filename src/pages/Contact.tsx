@@ -8,7 +8,7 @@ import {
 import Page from "../assets/helpers/Page";
 import EmailFormRestAPI from "../components/form/EmailFormRestAPI";
 import Stage from "../components/stage/Stage";
-import KamdemStage from "/img/patelot.png";
+import KamdemStage from "/img/stage_contact.png";
 
 const Contact = () => {
   const itOffers: string[] = [

@@ -5,7 +5,7 @@ import BlogList from "../components/blog/BlogList";
 import IsLoading from "../components/is-loading/IsLoading";
 import Stage from "../components/stage/Stage";
 import useDataPostList from "../hooks/useDataBlogList";
-import KamdemStage from "/img/patelot.png";
+import KamdemStage from "/img/stage_blog.png";
 
 const Blog = () => {
   // state
