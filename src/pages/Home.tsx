@@ -42,12 +42,11 @@ const Home = () => {
         icons={icons}
         imgStageSrc={KamdemStage}
       />
-      {/* <PatelotCards /> */}
       <div className="bg-black">
         <div className="container mx-auto p-8">
           <div className="grid md:grid-cols-3 gap-10 ">
             <Card
-              image="/img/patelot.png"
+              image="/img/web_patelot.jpg"
               title="Über mich"
               body="Mein Name ist Patrick Kamdem, und ich bin ein engagierter Frontend-Entwickler mit umfassender Erfahrung in der Entwicklung moderner, benutzerfreundlicher Webanwendungen. Ich beherrsche eine Vielzahl von Technologien, darunter HTML, CSS, XML/XSLT, XSD-Schema, JavaScript, JQuery, Node.js, Next.js, React.js, TypeScript, Ajax, Bootstrap, Tailwind CSS und daisyUI. Zusätzlich verfüge ich über fundierte Kenntnisse in MySQL, UML, XAMPP, UX/UI-Design, Photoshop, ADOBE Target Test, SEA/SEO sowie im Bereich E-Commerce und Online-Shops."
               linkText="home"
@@ -73,7 +72,7 @@ const Home = () => {
               body="Ich freue mich immer über Nachrichten und Feedback von meinen Lesern! Wenn Du Fragen hast oder einfach nur 'Hallo' sagen willst, zögere nicht, mich zu kontaktieren."
               linkText="mailto:patrick-kamdem@patelot.de"
               isExternLink={true}
-              buttonText="Mehr erfahren ..."
+              buttonText="Mich kontaktieren"
             />
             <Card
               image="/img/travel_patelot.jpg"
