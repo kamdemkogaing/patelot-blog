@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Card = ({
   image,
   title,
-  body,
   isExternLink = false,
   linkText,
   buttonText,
+  children,
 }) => {
   return (
     <div className="card bg-base-100 shadow-xl">
@@ -19,7 +19,7 @@ const Card = ({
       </figure>
       <div className="card-body">
         <h2 className="card-title text-3xl font-bold">{title}</h2>
-        <p className="">{body}</p>
+        <p>{children}</p>
         <div className="card-actions justify-end">
           <button className="rounded-md bg-[olive]/80 px-4 py-2 text-white font-bold shadow-sm mt-4 hover:bg-black">
             {isExternLink ? (
