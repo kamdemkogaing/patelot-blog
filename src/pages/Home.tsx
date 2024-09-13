@@ -138,6 +138,7 @@ const Home = () => {
               Kinder, Computer, Internet, Vereine, Fußball, Kochen, Essen.
             </Card>
           </div>
+          {/* <DummyText /> */}
         </div>
       </div>
     </Page>

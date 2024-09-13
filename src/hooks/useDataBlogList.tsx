@@ -14,34 +14,32 @@ export default function useDataBlogList(url) {
     setIsLoading(true);
     setError(null);
 
-    setTimeout(() => {
-      fetch(url, { signal: abortController.signal })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(
-              `Network response was not ok: ${response.statusText}`
-            );
-          }
-          return response.json();
-        })
-        .then((data) => {
-          setData(data);
+    fetch(url, { signal: abortController.signal })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(
+            `Network response was not ok: ${response.statusText}`
+          );
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        if (error.name === "AbortError") {
+          console.log(
+            "here was a problem with the fetch operation: ",
+            error.message
+          );
+        } else {
+          setError(
+            "There was a problem with the fetch operation: " + error.message
+          );
           setIsLoading(false);
-        })
-        .catch((error) => {
-          if (error.name === "AbortError") {
-            console.log(
-              "here was a problem with the fetch operation: ",
-              error.message
-            );
-          } else {
-            setError(
-              "There was a problem with the fetch operation: " + error.message
-            );
-            setIsLoading(false);
-          }
-        });
-    }, 1000);
+        }
+      });
 
     return () => abortController.abort();
   }, [url]);

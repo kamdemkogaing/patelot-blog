@@ -61,7 +61,7 @@ const HamburgerMenu = () => {
       <div
         className={`lg:flex lg:items-center ${
           isOpen ? "block" : "hidden"
-        } shadow-lg p-8 border border-zinc-300 bg-zinc-100 `}
+        } shadow-lg p-8 border border-zinc-300 bg-zinc-100 transform transition-all duration-500 ease-in-out`}
       >
         <Link to="/home" className="block px-4 py-2 text-[olive] font-bold">
           Über mich
